@@ -1,4 +1,4 @@
 class Note < ApplicationRecord
-  has_many :user_labels
-  has_many :labels, through: :user_labels
+  has_many :note_labels
+  has_many :labels, through: :note_labels
 end
