@@ -10,14 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_19_054651) do
+ActiveRecord::Schema.define(version: 2019_02_19_092313) do
 
   create_table "labels", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.string "color"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "fg_color"
+    t.string "bg_color"
   end
 
   create_table "note_labels", force: :cascade do |t|
