@@ -1,0 +1,4 @@
+exclude: 'ActiveRecord::InternalMetadata, ActiveRecord::SchemaMigration'
+filename: erd
+filetype: png
+
