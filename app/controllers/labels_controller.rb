@@ -14,27 +14,27 @@ class LabelsController < ApplicationController
   def create
     label = Label.new(label_params)
     if label.save
-      render status: 200
+      head :ok
     else
-      render status: 400
+      head :bad_request
     end
   end
 
   def update
     label = Label.find(params[:id])
     if label.update(label_params)
-      render status: 200
+      head :ok
     else
-      render status: 400
+      head :bad_request
     end
   end
 
   def destroy
     label = Label.find(params[:id])
     if label.destroy
-      render status: 200
+      head :ok
     else
-      render status: 400
+      head :bad_request
     end
   end
 
