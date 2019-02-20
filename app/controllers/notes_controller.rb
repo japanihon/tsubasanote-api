@@ -10,12 +10,6 @@ class NotesController < ApplicationController
     render json: @note
   end
 
-  def new
-    @note = Note.new
-    # @labels = Label.all　ラベル追加時の為に残しておく
-    # render json: @labels
-  end
-
   def create
     note = Note.new(note_params)
     if note.save
