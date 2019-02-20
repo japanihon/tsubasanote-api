@@ -1,6 +1,4 @@
 class LabelsController < ApplicationController
-  protect_from_forgery except: :create
-
   def index
     labels = Label.all
     render json: labels
