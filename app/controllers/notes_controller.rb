@@ -1,5 +1,4 @@
 class NotesController < ApplicationController
-
   def index
     @notes = Note.all
     render json: @notes
@@ -42,5 +41,4 @@ class NotesController < ApplicationController
   def note_params
     params.require(:note).permit(:title, :content)
   end
-
 end
