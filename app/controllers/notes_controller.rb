@@ -20,7 +20,7 @@ class NotesController < ApplicationController
 
   def update
     note = Note.find(params[:id])
-    if note.updata(note_params)
+    if note.update(note_params)
       head :ok
     else
       head :bad_request
