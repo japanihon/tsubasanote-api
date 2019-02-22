@@ -39,6 +39,6 @@ class LabelsController < ApplicationController
   private
 
   def label_params
-    params.permit(:name, :description, :fg_color, :bg_color)
+    params.require(:label).permit(:name, :description, :fg_color, :bg_color)
   end
 end
