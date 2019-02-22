@@ -1,6 +1,12 @@
 class NoteLabelsController < ApplicationController
   def create
-    note.labels << label
+    head :bad_request and return if note.labels.include?(label)
+    note_labels = note.note_labels.new(label: label)
+    if note_labels.save
+      head :ok
+    else
+      head :bad_request
+    end
   end
   
   def destroy
@@ -10,7 +16,7 @@ class NoteLabelsController < ApplicationController
   private
 
   def label
-    Label.find(params[:label_id])
+    Label.find(params[:id])
   end
 
   def note
