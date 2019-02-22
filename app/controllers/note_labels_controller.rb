@@ -1,5 +1,5 @@
 class NoteLabelsController < ApplicationController
-  def update
+  def create
     note.labels << label
   end
   
@@ -10,7 +10,7 @@ class NoteLabelsController < ApplicationController
   private
 
   def label
-    Label.find(params[:id])
+    Label.find(params[:label_id])
   end
 
   def note
