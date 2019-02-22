@@ -1,6 +1,5 @@
 class NoteLabelsController < ApplicationController
   def create
-    head :bad_request and return if note.labels.include?(label)
     note_labels = note.note_labels.new(label: label)
     if note_labels.save
       head :ok
