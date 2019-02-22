@@ -1,5 +1,5 @@
 class NoteLabelsController < ApplicationController
-  def create
+  def update
     note.labels << label
   end
   
