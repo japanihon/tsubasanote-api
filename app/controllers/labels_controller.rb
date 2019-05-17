@@ -1,6 +1,7 @@
 class LabelsController < ApplicationController
   def index
     labels = Label.all.order(id: "DESC")
+    sleep(3)
     render json: labels
   end
 
