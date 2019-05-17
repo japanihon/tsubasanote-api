@@ -1,6 +1,10 @@
 class NotesController < ApplicationController
   def index
+<<<<<<< HEAD
     @notes = Note.all
+=======
+    @notes = Note.all.order(id: "DESC")
+>>>>>>> feature/2
     render json: @notes
   end
 
@@ -20,7 +24,11 @@ class NotesController < ApplicationController
 
   def update
     note = Note.find(params[:id])
+<<<<<<< HEAD
     if note.updata(note_params)
+=======
+    if note.update(note_params)
+>>>>>>> feature/2
       head :ok
     else
       head :bad_request
