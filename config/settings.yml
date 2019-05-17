@@ -1,0 +1,18 @@
+defaults: &defaults
+  user:
+    name:
+      max_length: 100
+    content:
+      max_length: 500
+
+ development:
+  <<: *defaults
+
+ test:
+  <<: *defaults
+
+ staging:
+  <<: *defaults
+
+ production:
+  <<: *defaultss

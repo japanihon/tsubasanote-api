@@ -31,3 +31,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'font-awesome-rails'
 gem 'i18n-js', '>=3.0.0.rc11'
 gem 'rack-cors'
+gem 'kaminari'
+gem 'settingslogic'
