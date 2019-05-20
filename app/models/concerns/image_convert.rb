@@ -1,7 +1,7 @@
 module ImageConvert
   extend ActiveSupport::Concern
 
-  include do
+  included do
     after_update :process_image_convert
   end
 
