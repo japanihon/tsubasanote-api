@@ -1,8 +1,9 @@
 class ApplicationController < ActionController::Base
 
-  before_action :current_user
-  before_action :require_sign_in!
-  helper_method :signed_in?
+  # 一旦off
+  # before_action :current_user
+  # before_action :require_sign_in!
+  # helper_method :signed_in?
 
   protect_from_forgery with: :exception
 
