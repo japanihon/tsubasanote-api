@@ -1,6 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+<img src="https://imgur.com/a/F8bSe7j">
 application up and running.
 
 Things you may want to cover:
